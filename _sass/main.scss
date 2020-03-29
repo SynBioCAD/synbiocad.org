@@ -1,0 +1,121 @@
+$backgroundColor: #ffffff;
+$bodyColor: #000000;
+$linkColor: #da1a1a;
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 16px;
+    font-size: 1.5em;
+}
+
+.spacer {
+    width: 32px;
+}
+
+body {
+  background: $backgroundColor;
+  color: $bodyColor;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  display: flex;
+  justify-content: center;
+
+}
+
+a {
+    color: $linkColor !important;
+    text-decoration: none;
+}
+a:hover {
+    border-bottom: 1px dotted $linkColor;
+}
+
+nav a.active {
+    border-bottom: 1px dotted $linkColor;
+}
+
+img.synbiocad {
+    width: 90%;
+    max-width: 400px;
+}
+
+div.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+
+div.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div.main {
+    display: inline-block;
+}
+
+
+
+div.use {
+    background-color: #f5f5f5;
+    padding: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+@media screen and (min-width: 1000px){
+    div.use {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+div.use-pic {
+}
+div.use-pic img {
+    width: 15em;
+}
+div.use-desc {
+    padding: 1em;
+    padding-top: 0;
+    text-align: left;
+}
+
+
+
+
+
+
+img.synbiocad-sec {
+    width: 100%;
+}
+div.sec-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+}
+
+div.sec-top-left {
+    flex: 1 1;
+}
+div.sec-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div.sec-top-right {
+    flex: 1 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+}
+
+
+
